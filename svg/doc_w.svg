@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.08" height="23.08" viewBox="0 0 23.08 23.08">
+  <title>Asset 22</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <path d="M0,0V23.08H23.08V5.71L17.38,0ZM17.84,2.69,20.4,5.25H17.84ZM1.57,21.51V1.57H16.26V6.82h5.25V21.51Z" fill="#fff"/>
+        <rect x="4.72" y="8.92" width="13.64" height="1.57" fill="#fff"/>
+        <rect x="4.72" y="5.25" width="8.39" height="1.57" fill="#fff"/>
+        <rect x="4.72" y="12.59" width="13.64" height="1.57" fill="#fff"/>
+        <rect x="4.72" y="16.26" width="13.64" height="1.57" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

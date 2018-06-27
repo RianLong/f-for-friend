@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Home</title>
+<meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="shortcut icon" href="favicon.ico" />
+<script src="https://use.typekit.net/tci8afv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/draggabilly.min.js"></script>
+</head>
+
+<body id="bg">
+    <div class="top-nav">
+        <div class="top-nav-left btn">
+            <img src="svg/topnav.svg">
+        </div>
+        <div class="top-nav-right">
+            <h4 id="time"></h4>
+        </div>
+    </div>
+    
+    <div class="top-nav-dropdown">
+            <div class="dropdown-item logout"><h3>LOGOUT</h3></div>
+    </div>
+    
+    <div class="login">
+        <div class="login-left"></div>
+        <div class="login-right">
+            <div class="login-box">
+                <h2>LOGIN</h2>
+                <div class="login-password">
+                    <form>
+                        <input type="text" class="login-password-input" id="logpass" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                        <input type="submit" class="login-password-submit" value="">
+                    </form>
+                    <div class="hint-btn"><p>?</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="container">
+        <div class="window photos-window draggable">
+            
+            <div class="window-top handle">
+                <div class="window-title noselect"><h3>PHOTOS</h3></div>
+                <div class="window-close"><img src="svg/close.svg"></div>
+            </div>
+            
+            <div class="quicksearch">
+                <input type="text" class="quicksearch-box" id="qs" placeholder="Where would you like to go?">
+                <input type="submit" class="quicksearch-btn" value="">
+            </div>
+            
+            <div class="window-sidebar photos-sidebar handle">
+                <div id="sort-wrapper" class="sidebar-nav">
+                    <div class="sidebar-btn portal-search"><img src="svg/circle.svg"></div>
+                    <div id="sort-az" class="sort-trigger sidebar-btn"><img src="svg/az.svg"></div>
+                    <div id="sort-za" class="sort-trigger sidebar-btn"><img src="svg/za.svg"></div>
+                </div>
+            </div>
+                
+            <div class="photos window-space">
+                <div class="item-space">
+                    <div class="item pic dl">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>cat2.jpg</p></div>
+                    </div>
+                    <div class="item pic dl">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>forest.jpg</p></div>
+                    </div>
+                    <div class="item pic dl">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>pretty.jpg</p></div>
+                    </div>
+                    <div class="item pic">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>trees.jpg</p></div>
+                    </div>
+                    <div class="item pic">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>pup1.jpg</p></div>
+                    </div>
+                    <div class="item pic">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>pup2.jpg</p></div>
+                    </div>
+                    <div class="item pic">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>1.jpg</p></div>
+                    </div>
+                    <div class="item pic">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>2.jpg</p></div>
+                    </div>
+                    <div class="item pic">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>cat3.jpg</p></div>
+                    </div>
+                    <div class="item pic">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>cat4.jpg</p></div>
+                    </div>
+                    <div class="item pic dl">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>FILE1.jpg</p></div>
+                    </div>
+                    <div class="item pic dl">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>FILE2.jpg</p></div>
+                    </div>
+                    <div class="item pic dl">
+                        <div class="item-icon"><img src="svg/pic.svg"></div>
+                        <div class="item-name"><p>FILE3.jpg</p></div>
+                    </div>
+                </div>
+                <div class="window-scroll"><img src="svg/nav_arrows.svg"></div>
+            </div>
+        </div>
+        
+        <div class="window picture-window draggable">
+            <div class="window-top handle">
+                <div class="window-title picture-title noselect"><h3>x.jpg</h3></div>
+                <div class="window-close"><img src="svg/close.svg"></div>
+            </div>
+            <div class="picture-space handle">
+                <img src="img/clqrTyka.jpg">
+            </div>
+        </div>
+        
+        <div class="window documents-window draggable">
+            
+            <div class="window-top handle">
+                <div class="window-title noselect"><h3>DOCUMENTS</h3></div>
+                <div class="window-close"><img src="svg/close.svg"></div>
+            </div>
+            
+            <div class="quicksearch">
+                <input type="text" class="quicksearch-box" id="qs" placeholder="Where would you like to go?">
+                <input type="submit" class="quicksearch-btn" value="">
+            </div>
+            
+            <div class="window-sidebar documents-sidebar handle">
+                <div id="sort-wrapper" class="sidebar-nav">
+                    <div class="sidebar-btn portal-search"><img src="svg/circle.svg"></div>
+                    <div id="sort-az" class="sort-trigger sidebar-btn"><img src="svg/az.svg"></div>
+                    <div id="sort-za" class="sort-trigger sidebar-btn"><img src="svg/za.svg"></div>
+                </div>
+            </div>
+                
+            <div class="documents window-space">
+                <div class="item-space">
+                    <div class="item doc">
+                        <div class="item-icon"><img src="svg/doc.svg"></div>
+                        <div class="item-name"><p>No One Else.doc</p></div>
+                    </div>
+                    <div class="item doc">
+                        <div class="item-icon"><img src="svg/doc.svg"></div>
+                        <div class="item-name"><p>Him and Her.doc</p></div>
+                    </div>
+                    <div class="item doc">
+                        <div class="item-icon"><img src="svg/doc.svg"></div>
+                        <div class="item-name"><p>Alive.doc</p></div>
+                    </div>
+                    <div class="item doc dl">
+                        <div class="item-icon"><img src="svg/doc.svg"></div>
+                        <div class="item-name"><p>LOG.doc</p></div>
+                    </div>
+                </div>
+                <div class="window-scroll-x"><img src="svg/nav_x.svg"></div>
+            </div>
+        </div>
+        
+        <div class="window doc-window draggable">
+            <div class="window-top handle">
+                <div class="window-title doc-title noselect"><h3>x.doc</h3></div>
+                <div class="window-close"><img src="svg/close.svg"></div>
+            </div>
+            <div class="doc-space">
+                <p>Hello</p>
+            </div>
+        </div>
+
+        <div class="window movies-window draggable">
+            
+            <div class="window-top handle">
+                <div class="window-title noselect"><h3>MOVIES</h3></div>
+                <div class="window-close"><img src="svg/close.svg"></div>
+            </div>
+            
+            <div class="quicksearch">
+                <input type="text" class="quicksearch-box" id="qs" placeholder="Where would you like to go?">
+                <input type="submit" class="quicksearch-btn" value="">
+            </div>
+            
+            <div class="window-sidebar movies-sidebar handle">
+                <div id="sort-wrapper" class="sidebar-nav">
+                    <div class="sidebar-btn portal-search"><img src="svg/circle.svg"></div>
+                    <div id="sort-az" class="sort-trigger sidebar-btn"><img src="svg/az.svg"></div>
+                    <div id="sort-za" class="sort-trigger sidebar-btn"><img src="svg/za.svg"></div>
+                </div>
+            </div>
+                
+            <div class="documents window-space">
+                <div class="item-space">
+                    <div class="item mov">
+                        <div class="item-icon"><img src="svg/mov.svg"></div>
+                        <div class="item-name"><p>Sunset.mov</p></div>
+                    </div>
+                    <div class="item mov">
+                        <div class="item-icon"><img src="svg/mov.svg"></div>
+                        <div class="item-name"><p>Night.mov</p></div>
+                    </div>
+                    <div class="item mov">
+                        <div class="item-icon"><img src="svg/mov.svg"></div>
+                        <div class="item-name"><p>Puppy.mov</p></div>
+                    </div>
+                    <div class="item mov">
+                        <div class="item-icon"><img src="svg/mov.svg"></div>
+                        <div class="item-name"><p>Cat.mov</p></div>
+                    </div>
+                    <div class="item mov dl">
+                        <div class="item-icon"><img src="svg/mov.svg"></div>
+                        <div class="item-name"><p>DOWNLOAD1.mov</p></div>
+                    </div>
+                    <div class="item mov dl">
+                        <div class="item-icon"><img src="svg/mov.svg"></div>
+                        <div class="item-name"><p>DOWNLOAD2.mov</p></div>
+                    </div>
+                    <div class="item mov dl">
+                        <div class="item-icon"><img src="svg/mov.svg"></div>
+                        <div class="item-name"><p>DOWNLOAD3.mov</p></div>
+                    </div>
+                </div>
+                <div class="window-scroll-x"><img src="svg/nav_x.svg"></div>
+            </div>
+        </div>
+        
+        <div class="window video-window">
+            <div class="window-close video-close"><img src="svg/close_w.svg"></div>
+            <div class="video-space"></div>
+            <div class="dim"></div>
+        </div>
+        
+        <div class="window messenger-window draggable">
+            
+            <div class="window-top handle">
+                <div class="window-title noselect"><h3>MESSENGER</h3></div>
+                <div class="window-close"><img src="svg/close.svg"></div>
+            </div>
+            
+            <div class="quicksearch">
+                <input type="text" class="quicksearch-box" id="qs" placeholder="Where would you like to go?">
+                <input type="submit" class="quicksearch-btn" value="">
+            </div>
+            
+            <div class="window-sidebar messenger-sidebar handle">
+                <div id="sort-wrapper" class="sidebar-nav">
+                    <div class="sidebar-btn portal-search"><img src="svg/circle.svg"></div>
+                </div>
+            </div>
+            
+            <div class="messenger-space">
+                <div class="msg-info">
+                    <div class="msg-info-left">
+                        <div class="msg-name">
+                            <h2>F</h2>
+                        </div>
+                        <div class="msg-id">
+                            <p>ID# 1492-194-9992</p>
+                        </div>
+                    </div>
+                    <div class="msg-info-right">
+                        <div class="msg-avatar">
+                            <img src="img/avatar.png">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-space" id="scrollchat">
+                    <div class="recieved-msg">
+                        <p>Hello! Click the menu to begin.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p>Welcome back! Once again, I am your assistant, F. I am here to assist your searches, reminders, questions, and more. If you'd like a full refresh on the basics, type 'TUTORIAL.'</p>
+                    </div>
+                </div>
+                
+                <form class="chat-box" id="chat">
+                    <input type="text" class="chat-type-area" id="message" placeholder="Messenger" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messenger'">
+                    <input type="submit" class="chat-send btn" value="">
+                </form>
+            </div>
+        </div>
+        
+        <div class="window portal-window draggable">
+            
+            <div class="window-top handle">
+                <div class="window-title noselect"><h3>PORTAL</h3></div>
+                <div class="window-close"><img src="svg/close.svg"></div>
+            </div>
+            
+            <div class="quicksearch">
+                <input type="text" class="quicksearch-box" id="qs" placeholder="Where would you like to go?">
+                <input type="submit" class="quicksearch-btn" value="">
+            </div>
+            
+            <div class="window-sidebar portal-sidebar handle">
+                <div id="sort-wrapper" class="sidebar-nav">
+                    <div class="sidebar-btn portal-search"><img src="svg/circle.svg"></div>
+                </div>
+            </div>
+            
+            <div class="portal-space">
+                <div class="home-portal page">
+                    <div class="home-icon"><img src="img/home.png"></div>
+                </div>
+                <div class="runthroughtheforest-portal page">
+                    <div class="forest-text">
+                        <h2>RunThroughTheForest</h2>
+                        <br>
+                        <p>run_diagnosis.start</p>
+                        <p>run_filecheck.start</p>
+                        <p>run_reboot.start/[PROCESS ID]</p>
+                    </div>
+                </div>
+                <div class="everythingisfine-portal page"></div>
+                <div class="f-admin-portal page">
+                    <div class="admin-cred">
+                        <h1>[F]</h1>
+                        <p>ID:</p>
+                        <input type="text" class="admin-id" id="idInput" placeholder="Where would you like to go?">
+                        <p>PASS:</p>
+                        <input type="text" class="admin-pass" id="aPassInput" placeholder="Where would you like to go?">
+                        <input type="submit" class="admin-btn" value="ENTER">
+                    </div>
+                </div>
+                <div class="f-admin-portal2 page">
+                    <div class="admin2-container">
+                        <h1>[F]</h1>
+                        <p>[SHUTDOWN] admin_YnbzPla_raze.start</p>
+                    </div>
+                </div>
+                <div class="everythingisfine-portal page">
+                    <h1>EVERYTHING IS FINE</h1>
+                    <div class="fine-box">
+                        <img src="img/fine1.jpg">
+                        <img src="img/fine2.jpg">
+                        <img src="img/fine3.jpg">
+                        <img src="img/fine4.jpg">
+                        <img src="img/fine5.jpg">
+                        <img src="img/fine6.jpg">
+                        <img src="img/fine7.jpg">
+                        <img src="img/fine8.jpg">
+                        <img src="img/fine9.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+	</div>
+    
+    <div class="notification">
+        <div class="not-title">
+            <h3>NEW MESSAGE</h3>
+        </div>
+        <div class="not-body">
+            <p>F: Hello! Click the menu below to begin.</p>
+        </div>
+    </div>
+    
+    <div class="bottom-nav">
+        <div class="bottom-nav-btn">
+            <img src="svg/nav.svg">
+        </div>
+        
+        <div class="bottom-nav-menu">
+            <div class="bottom-nav-menu-buttons">
+                <div class="nav-photos btn"><img src="svg/pic.svg"></div>
+                <div class="nav-documents btn"><img src="svg/doc.svg"></div>
+                <div class="nav-movies btn"><img src="svg/mov.svg"></div>
+                <div class="nav-messenger btn"><img src="svg/msg.svg"></div>
+                <div class="nav-portal btn"><img src="svg/portal.svg"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pop-up1">
+        <div class="pop-up">
+            <h2>INCOMING FILE TRANSFER</h2>
+            <p>Host: [unavailable]</p>
+            <p>File transfer: 'r7rp9.zip' awaiting approval for download.</p>
+            <div class="pop-up-btn-container">
+                <div class="pop-up-accept pop-up1-btn">
+                    <h3>DOWNLOAD</h3>
+                </div>
+                <div class="pop-up-cancel">
+                    <h3>CANCEL</h3>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-dim"></div>
+    </div>
+    
+    <div class="pop-up2">
+        <div class="pop-up">
+            <h2>FILE TRANSFER COMPLETE</h2>
+            <p>File: 'r7rp9.zip' added</p>
+            <p>[3] Pictures [1] Document [3] Movies added</p>
+            <div class="pop-up-btn-container">
+                <div class="pop-up-accept pop-up2-btn">
+                    <h3>CLOSE</h3>
+                </div>
+                <div class="pop-up-cancel pop-up2-btn">
+                    <h3>CANCEL</h3>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-dim"></div>
+    </div>
+    
+    <div class="pop-up3">
+        <div class="pop-up">
+            <h2>HOSTILE COMMAND DETECTED</h2>
+            <p>These commands can cause major damage.<br>How about asking my favorite color? Favorite song?</p>
+            <p>Just type in "what is your favorite song?"<br>and I'll let you know my deepest darkest secrets.</p>
+            <div class="pop-up-btn-container">
+                <div class="pop-up-accept pop-up3-btn">
+                    <h3>ABSOLUTELY!</h3>
+                </div>
+                <div class="pop-up-cancel">
+                    <h3>OKAY</h3>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-dim"></div>
+    </div>
+    
+    <div class="pop-up4">
+        <div class="pop-up">
+            <h2>MALWARE WEBSITE DETECTED</h2>
+            <p>This website is know to infect computers with nasty stuff.<br>I don't like it very much either.</p>
+            <p>Why not try another site?<br>How about "everythingisfine.portal"?</p>
+            <div class="pop-up-btn-container">
+                <div class="pop-up-accept pop-up4-btn">
+                    <h3>OKAY!</h3>
+                </div>
+                <div class="pop-up-cancel pop-up4-btn2">
+                    <h3>NO</h3>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-dim"></div>
+    </div>
+    
+    
+    <script src="js/less.min.js"></script>
+	<!-- THIS IS INCLUDED AT THE BOTTOM TO ALLOW CONTENT TO LOAD BEFORE SCRIPTS -->
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

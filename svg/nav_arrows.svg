@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.98" height="40.18" viewBox="0 0 19.98 40.18">
+  <title>nav_arrows</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <path d="M9.32,7.34,12.24,0h2.3l-4,10.16H8.14L4.12,0H6.4Z" fill="#dedede"/>
+        <path d="M9.32,19.94l2.92-7.34h2.3l-4,10.16H8.14l-4-10.16H6.4Z" fill="#dedede"/>
+        <path d="M9.32,32.54l2.92-7.34h2.3l-4,10.16H8.14l-4-10.16H6.4Z" fill="#dedede"/>
+        <path d="M20,40.18H0V38H20Z" fill="#dedede"/>
+      </g>
+    </g>
+  </g>
+</svg>
